@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import useNews from 'utils/news/useNews'
-import testData from 'utils/news/testData'
 import NewsCo from 'components/News'
 
 function App() {
   const [keyword, setKeyword] = useState<string>('')
   const [sendData, setSendData] = useState<string>('')
-  const newNews = useNews(sendData, process.env.REACT_APP_API_KEY || '')
-  // const newNews = testData
+  const newNews = useNews(sendData)
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setSendData(keyword)

@@ -1,4 +1,4 @@
-const testData = [
+export const testData = [
   {
     source: {
       id: 'engadget',
@@ -1660,5 +1660,3 @@ const testData = [
       'Graham Arnold claims he does not read the media. It is his response, every time, to every query regarding external praise, criticism or otherwise. But if, hypothetically, he did take a peek from time… [+4792 chars]'
   }
 ]
-
-export default testData
